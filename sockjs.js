@@ -1,4 +1,4 @@
-/* SockJS client, version 0.3.4, http://sockjs.org, MIT License
+/* SockJS client, version 0.3.5, http://sockjs.org, MIT License
 
 Copyright (c) 2011-2012 VMware, Inc.
 
@@ -839,7 +839,7 @@ var XHRLocalObject = utils.XHRLocalObject = function(method, url, payload) {
     var that = this;
     utils.delay(function(){
         that._start(method, url, payload, {
-            no_credentials: true
+            no_credentials: false
         });
     });
 };
